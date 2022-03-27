@@ -14,6 +14,7 @@ return [
 
     'web' => [
         App\Http\Routes\DefaultRoute::class,
+        App\Http\Routes\ToDoRoute::class,
         App\Http\Controllers\DashboardController::class,
         /** @inject web **/
     ],

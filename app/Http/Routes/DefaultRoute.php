@@ -22,7 +22,7 @@ class DefaultRoute extends BaseRoute
         $this->registerRateLimiter();
         $this->registerBindingRoute();
 
-        $this->router->get('/', [
+        $this->router->get('/old', [
             'as' => $this->name('default'),
             'uses' => fn () => Inertia::render('Welcome', [
                 'canLogin' => Route::has('login'),
